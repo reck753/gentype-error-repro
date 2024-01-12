@@ -1,0 +1,22 @@
+{
+  "name": "gentype-error-repro",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".res.js",
+  "bs-dependencies": ["@rescript/core"],
+  "bsc-flags": ["-open RescriptCore"],
+  "gentypeconfig": {
+    "language": "typescript",
+    "importPath": "relative",
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  }
+}
